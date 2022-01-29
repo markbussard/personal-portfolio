@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact me</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">Mark Bussard</a>
+      <nav>
+        <a href="/about.html">About</a>
+        <a href="/skills.html">My Skills</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+    <section id="contact-me-component">
+      <h2>Contact me</h2>
+      <p>
+        I'm interested in freelance or any possible <em>employment</em> opportunities. <br>
+        However, feel free to send me message if this is not the case.
+      </p>
+      <form id="contact">
+        <fieldset>
+          <legend>Send me a message</legend>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Name" />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Email" />
+          <br>
+          <br>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject" />
+          <br>
+          <br>
+
+          <label for="reason">Reason</label>
+          <select name="reason" id="cars">
+            <option value="jobOpportunity">Job Opportunity</option>
+            <option value="question">Question</option>
+            <option value="justSayingHi">Just saying hi</option>
+          </select>
+          <br>
+          <br>
+          <label for="reason-optgroup-version">Reason w/ optgroup</label>
+          <select id="reason-optgroup-version">
+            <optgroup label="Job Opportunity">
+              <option>I'm a recruiter</option>
+              <option>I'm looking for a freelancer</option>
+            </optgroup>
+            <optgroup label="Question">
+              <option>Can you mentor me</option>
+              <option>How is UCSD?</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Message"></textarea>
+          <input type="submit" value="Submit" />
+        </fieldset>
+        
+      </form>
+    </section>
+
+    <footer>
+      <a href="mailto:markbussard@outlook.com">Email</a>
+      <a href="/">Github</a>
+      <a href="/">LinkedIn</a>
+      <p>This page was made with &hearts; by <i>Mark Bussard</i></p>
+    </footer>
+  </body>
+</html>
