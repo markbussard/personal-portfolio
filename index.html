@@ -7,75 +7,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mark Bussard's Personal Portfolio</title>
 	  <link href="images/favicon.ico" rel="icon" />
-    <style>
-      footer {
-        border: 1px solid black;
-      }
-    </style>
+    <link href="styles/index.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/570b96863e.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
     <header>
-      <a href="/"><h3>Mark Bussard</h3></a>
-      <nav>
-        <a href="/about.html">About</a>
-        <a href="/skills.html">My Skills</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
+      <menu class="main-menu">
+        <div class="main-menu__top">
+          <a href="#">
+            <span>Mark</span>
+          </a>
+          <span>Web Developer</span>
+        </div>
+        <nav class="main-menu__nav">
+          <a rel="about" href="#about">About</a>
+          <a rel="skills" href="#skills">My Skills</a>
+          <a rel="projects" href="#projects">Projects</a>
+          <a rel="contact" href="#contact">Contact</a>
+        </nav>
+        <ul class="social">
+          <li>
+            <a href="https://www.linkedin.com/in/mark-bussard/"  target="_blank">
+              <img src="images/linkedin-icon.png" height="20" width="20" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/markbussard" target="_blank">
+              <img src="images/github-icon.svg" height="24" width="24" />
+            </a>
+          </li>
+        </ul>
+      </menu>
     </header>
-    <hr />
     <main>
-      <section id="hero-component">
-        <h1>
-          Hi, <br>
-          I'm Mark, <br>
-          web developer
-        </h1>
-        <p>Full Stack Developer</p>
-        <audio controls>
-          <source src="arcade-game-over.wav" type="audio/ogg">
-          Your browser does not support the audio element.
-        </audio>
-        <br>
-        <br>
-        <br>
-        <video width="320" height="240" controls>
-          <source src="night-sky-clip.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <br>
-        <br>
-        <button type="button">Find out more</button>
-        <br>
-        <br>
-        
-        <code>
-          const x = false;
-          const y = true;
-          const z = x ? y ? 'hi' : 'hey' : 'yo';
-          console.log(z);
-        </code>
+      <!-- Home / Hero -->
+      <section id=home" class="section-full-page home">
+        <div class="section-main-content">
+          <h1>
+            Hi, <br>
+            I'm Mark, <br>
+            web developer
+          </h1>
+          <p>Full Stack Developer</p>
+          <br>
+          <a href="#about" class="flat-button">
+            Find out more
+          </a>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="section-full-page transition-fade about">
+        <div class="section-main-content about-info">
+          <header>
+            <h2 class="section-header">About Me</h2>
+          </header>
+          <p>I'm a fourth year student studying Computer Science at UC San Diego. I have a passion for frontend development and creating dynamic user experiences.</p>
+          <p>Well-organized person, problem solver with a high attention for detail. Fan of Basketball, binge watching netflix series and learning new skills.</p>
+          <p>Well-organized person, problem solver with a high attention for detail. Fan of Basketball, binge watching netflix series and learning new skills.</p>
+        </div>
+        <div class="about-img">
+          <img src="images/about-img.jpeg" alt="Me" />
+        </div>
+      </section>
+
+      <!-- Skills & Experience -->
+      <section id="skills" class="section-full-page skills">
+        <div class="section-main-content skills-info">
+          <h2 class="section-header">
+            Skills & <br />
+            Experience
+          </h2>
+          <p>
+            Since beginning my journey into web development nearly two years ago, I have spent a good portion of my time working as a Software Engineer at OmniSync.
+          </p>
+          <p>
+            The main area of my work has been that of a full stack developer, using JavaScript, HTML, and CSS to build out various features, along with the coupling of necessary back-end functionality.
+          </p>
+          <p>
+            I have experience working with React, Firebase, and GraphQL. Various other technologies / APIs that I've worked with include Webpack, Twilio, MongoDB and Express.
+          </p>
+        </div>
+        <div class="skills-details">
+          <div class="chart">
+            <span>JavaScript</span>
+            <footer>
+              <div data-width="90%" style="width:95%; background-color: #F3E443;"></div>
+            </footer>
+          </div>
+          <div class="chart">
+            <span>React</span>
+            <footer>
+              <div data-width="90%" style="width:90%; background-color: #7BD6F8;"></div>
+            </footer>
+          </div>
+          <div class="chart">
+            <span>HTML</span>
+            <footer>
+              <div data-width="80%" style="width:80%; background-color: #D95A2E;"></div>
+            </footer>
+          </div>
+          <div class="chart">
+            <span>CSS</span>
+            <footer>
+              <div data-width="65%" style="width:65%; background-color: #383EDE;"></div>
+            </footer>
+          </div>
+          <div class="chart">
+            <span>Node.js</span>
+            <footer>
+              <div data-width="70%" style="width:70%; background-color: #7EB069;"></div>
+            </footer>
+          </div>
+          <div class="work-row">
+            <div class="work-card">
+              <header>Full Stack Developer</header>
+              <section>
+                OmniSync <br />
+                <time>2020 - Now</time>
+              </section>
+              <footer>
+                Government funds for R&D in tech and life sciences startups.
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section-full-page projects">
+        <div class="section-main-content projects-info">
+          <header>
+            <h2 class="section-header">
+              Some things I've built
+            </h2>
+          </header>
+          <p>
+            Outside of my academic school programming assignments and my work, I also enjoy exploring new technologies, whether it's a framework, new language or an API. These days it's usually anything web related.
+          </p>
+          <p>
+            By working on my own projects, I'm able to revisit any problems I've encountered in the past, and figured out better approaches to go about solving them. Essentially figure out what I wanted to do differently (maybe not exactly, but similar) and implement it to see any improvements.
+          </p>
+          <p>
+            I've especially become interested in realtime enabled features, such as Chat applications, or through collaborative work in writing through text editors. 
+          </p>
+        </div>
+        <div class="projects-details">
+          <div class="project-card">
+            <header>ZenCMS</header>
+            <section>
+              Content Management System
+              <p>An application that provides project management tools, similar to sites like Jira, Clickup, etc.</p>
+            </section>
+            <footer>
+              React, GraphQL, MongoDB, Express, Node.js
+            </footer>
+          </div>
+          <div class="project-card">
+            <header>Conversations App</header>
+            <section>
+              Chat Application
+              <p>
+                A conversations app implementing using Twilio Conversations API.
+              </p>
+            </section>
+            <footer>
+              React, Styled Components, Node.js, Twilio
+            </footer>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section id="contact" class="section-full-page contact">
+        <div class="section-main-content">
+          <header>
+            <h2 class="section-header">
+              Contact me
+            </h2>
+          </header>
+          <p>
+            I'm interested in any possible freelance projects, however ambitious or large.
+            For any other request or questions, feel free to send me a message.
+          </p>
+          <form id="contact" class="contact-form">
+            <input placeholder="Name" type="text" name="name" required />
+            <input placeholder="Email" type="text" name="email" required />
+            <textarea placeholder="Message" type="text" name="message" required></textarea>
+            <input class="submit-button" type="submit" id="submit" />
+          </form>
+        </div>
       </section>
     </main>
-
-    <br>
-    <br>
-    
-
-    <footer>
-      <a href="mailto:markbussard@outlook.com">Email</a>
-      <a href="/">Github</a>
-      <a href="/">LinkedIn</a>
-      <span>This page was made with &hearts; by <i>Mark Bussard</i></span>
-    </footer>
   </body>
 </html>
-
-
-<!-- 
-  NEED: 
-  iframe, canvas
-
--->
-
