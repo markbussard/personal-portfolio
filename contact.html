@@ -8,7 +8,7 @@
     <title>Mark Bussard's Personal Portfolio</title>
 	  <link href="images/favicon.ico" rel="icon" />
     <link href="styles/global.css" rel="stylesheet" />
-    <link href="styles/index.css" rel="stylesheet" />
+    <link href="styles/contact.css" rel="stylesheet" />
     <script src="scripts/mainMenu.js" defer></script>
   </head>
   <body>
@@ -48,24 +48,25 @@
           </menu>
         </header>
         <main>
-          <section id=home" class="section-full-page about">
-            <div class="about-img">
-              <img src="images/about-img.jpeg" alt="Me" width="80%" />
-            </div>
-            <div class="section-main-content about-info">
-              <h2>Hi, I'm Mark Bussard</h2>
+          <section id="contact" class="section-full-page contact">
+            <div class="section-main-content contact-info">
+              <header>
+                <h2 class="section-header">
+                  Let's chat.
+                </h2>
+              </header>
               <p>
-                I'm a fourth year student studying Computer Science at UC San Diego. 
-                I have a passion for frontend development and creating dynamic user experiences.
+                I'm interested in any possible freelance projects, however ambitious or large.
+                For any other request or questions, feel free to send me a message.
               </p>
-              <p>
-                Well-organized person, problem solver with a high attention for detail. Fan of 
-                Basketball, binge watching netflix series and learning new skills.
-              </p>
-              <p>
-                Well-organized person, problem solver with a high attention for detail. 
-                Fan of Basketball, binge watching netflix series and learning new skills.
-              </p>
+              <div class="contact-form-wrapper">
+                <form id="contact" class="contact-form">
+                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Email" type="text" name="email" required />
+                  <textarea placeholder="Message" type="text" name="message" required></textarea>
+                  <input class="submit-button" type="submit" id="submit" />
+                </form>
+              </div>
             </div>
           </section>
         </main>
