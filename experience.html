@@ -9,46 +9,14 @@
 	  <link href="images/favicon.ico" rel="icon" />
     <link href="styles/experience.css" rel="stylesheet" />
     <link href="styles/global.css" rel="stylesheet" />
-    <script src="scripts/mainMenu.js" defer></script>
+    <script src="components/nav-bar.js" defer></script>
     <script src="utils/tagCanvas.min.js" defer></script>
     <script src="scripts/skillsCanvas.js" defer></script>
   </head>
   <body>
     <div id="page-wrapper">
       <div id="page">
-        <header>
-          <div class="main-menu-button">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-          </div>
-          <div class="main-menu">
-            <div class="main-menu__top">
-              <a href="index.html">
-                <span>Mark</span>
-              </a>
-              <span>Web Developer</span>
-            </div>
-            <nav class="main-menu__nav">
-              <a rel="about" href="index.html">About</a>
-              <a rel="skills" href="experience.html">Experience</a>
-              <a rel="projects" href="projects.html">Projects</a>
-              <a rel="contact" href="contact.html">Contact</a>
-            </nav>
-            <ul class="social">
-              <li>
-                <a href="https://www.linkedin.com/in/mark-bussard/" target="_blank">
-                  <img src="images/linkedin-icon.svg" height="18" width="18" alt="linkedin" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/markbussard" target="_blank">
-                  <img src="images/github-icon.svg" height="22" width="22" alt="github" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </header>
+        <nav-bar></nav-bar>
         <main>
           <!-- Skills & Experience -->
           <section class="section-full-page skills">
