@@ -162,9 +162,7 @@ navbar.innerHTML = `
     </div>
     <nav class="main-menu__nav">
       <a rel="about" href="index.html">About</a>
-      <a rel="skills" href="experience.html">Experience</a>
       <a rel="projects" href="projects.html">Projects</a>
-      <a rel="contact" href="contact.html">Contact</a>
     </nav>
     <ul class="social">
       <li>
